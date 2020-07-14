@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class IdentitasController extends Controller
 {
-    //Untuk GET API -> Menampilkan semua ID
+    //Untuk GET API -> Menampilkan semua data ID
     public function index(){
         $identitas = Identitas::orderBy('id', 'desc')->get();
         return response()->json($identitas);
